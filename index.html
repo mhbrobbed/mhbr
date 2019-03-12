@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>
+        MHBR
+    </title>
 </head>
 <body>
-    <form id="main" onsubmit="pressedButton()" method="post">
-	<p>Would you rather start a fight or the one to resolve it?</p>
-    <input type="radio" name="question1" value="s"> Start a fight
-    <input type="radio" name="question1" value="r"> Resolve a fight
-    <p>Would you describe yourself as street smart or book smart?</p>
-    <input type="radio" name="question2" value="B"> Book Smart
-    <input type="radio" name="question2" value="S"> Street Smart
-    <input type="radio" name="question2" value="Bth"> Both
-    <p>Somebody is attacking you, would you pick a sword, shield, or a gun?</p>
-    <input type="radio" name="question3" value="s"> Sword
-    <input type="radio" name="question3" value="sh"> Shield
-    <input type="radio" name="question3" value="g"> Gun
-    <p>Would you describe yourself as Strong, Rich or Agile?</p>y
-    <input type="radio" name="question4" value="s"> Strong
-    <input type="radio" name="question4" value="r"> Rich
-    <input type="radio" name="question4" value="a"> Agile
-    <p>Are you noble and brave, serious but get the job done or smart alecky but trustworthy?</p>
-    <input type="radio" name="question4" value="n"> Noble
-    <input type="radio" name="question4" value="e"> Serious
-    <input type="radio" name="question4" value="sa"> Smart Alecky
-    <p>You have three rooms: Room 1 (Full of technology), Room 2 (Full of powerful weapons), Room 3 (Full of magic). Which room would you choose?</p>
-    <input type="radio" name="question4" value="1"> Room 1
-    <input type="radio" name="question4" value="2"> Room 2
-    <input type="radio" name="question4" value="3"> Room 3
-    </form>
     <br>
-    <button type= "submit" form="main" value="submit">Submit</button>
-    
-    
-    
+    <h1 id="result"></h1>
+    <div id="jumbotron">
+        <button id="left" onclick="left()"><img src= "assets/left.png" id="l"></button>
+        <button id="right" onclick="right()"><img src= "assets/right.png" id="r"></button>
+        <center>
+            <div id="qcard">
+                <form id="main" onsubmit="pressedButton()" method="post">
+                    <div id="q1uestion" style="display: inherit">  
+                        <p id="q">Would you rather start a fight or the one to resolve it?</p>
+                        <input type="radio" name="question1" value="s" id= "q1o1"> Start a fight
+                        <input type="radio" name="question1" value="r" id= "q1o2"> Resolve a fight
+                    </div>
+                    <div id="q2uestion" style="display: none">
+                        <p id="q">Would you describe yourself as street smart or book smart?</p>
+                        <input type="radio" name="question2" value="B" id= "q2o1"> Book Smart
+                        <input type="radio" name="question2" value="S" id= "q2o2"> Street Smart
+                        <input type="radio" name="question2" value="Bth" id= "q2o3"> Both
+                    </div>
+                    <div id="q3uestion" style="display: none">
+                        <p id="q">Somebody is attacking you, would you pick a sword, shield, or a gun?</p>
+                        <input type="radio" name="question3" value="s" id= "q3o1"> Sword
+                        <input type="radio" name="question3" value="sh" id= "q3o2"> Shield
+                        <input type="radio" name="question3" value="g" id= "q3o3"> Gun
+                    </div>
+                    <div id="q4uestion" style="display: none">
+                        <p id="q">Would you describe yourself as Strong, Rich or Agile?</p>
+                        <input type="radio" name="question4" value="s" id= "q4o1"> Strong
+                        <input type="radio" name="question4" value="r" id= "q4o2"> Rich
+                        <input type="radio" name="question4" value="a" id= "q4o3"> Agile
+                    </div>
+                    <div id="q5uestion" style="display: none">
+                        <p id="q">Are you noble and brave, serious but get the job done or smart alecky but trustworthy?</p>
+                        <input type="radio" name="question5" value="n" id= "q5o1"> Noble
+                        <input type="radio" name="question5" value="e" id= "q5o2"> Serious
+                        <input type="radio" name="question5" value="sa" id= "q5o3"> Smart Alecky
+                    </div>
+                    <div id="q6uestion" style="display: none">
+                        <p id="q">You have three rooms: Room 1 (Full of technology), Room 2 (Full of powerful weapons), Room 3 (Full of magic). Which room would you choose?</p>
+                        <input type="radio" name="question6" value="1" id= "q6o1"> Room 1
+                        <input type="radio" name="question6" value="2" id= "q6o2"> Room 2
+                        <input type="radio" name="question6" value="3" id= "q6o3"> Room 3
+                    </div>
+                </form>
+                <div id="sub"  style="display: none">
+                    <button type= "submit" form="main" value="submit" id="submi">Submit</button>
+                </div>
+            </div>
+        </center>
+    </div>
 </body>
 </html>
