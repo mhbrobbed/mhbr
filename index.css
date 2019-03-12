@@ -1,0 +1,42 @@
+#qcard {
+    height: 500px;
+    width: 500px;
+}
+
+#jumbotron {
+    height: 500px;
+}
+#left {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 400px;
+    border: none;
+
+}
+#right {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 250px;
+    border: none;
+}
+
+#l{
+    height: 20px;
+    position: absolute;
+    width: 20px;
+}
+#r{
+    height: 20px;
+    position: absolute;
+    width: 20px;
+}
+#q {
+    padding-top:250px;
+}
+#submi {
+    margin-top: 250px;
+}
